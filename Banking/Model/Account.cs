@@ -18,6 +18,6 @@ namespace Banking.Model
 
         // процентная ставка
         public double Interest { get; set; }
-        }
     }
 }
+

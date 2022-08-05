@@ -7,17 +7,13 @@ using Banking.Model;
 
 namespace Banking.Model
 {
-    public class Calculator
+    public class InterestCalculator
     {
-         IProfileCalculate _profile;
         // Метод для расчета процентной ставки
-        public Calculator(IProfileCalculate profile)
+ 
+        public void Calculate(IProfileCalculate profile, Account account)
         {
-            _profile = profile;
-        }
-        public void Calculate(Account account)
-        {
-            _profile.CalculateInterest(account);
+            profile.CalculateInterest(account);
         }
     }
 }
